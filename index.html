@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRUD Mobil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Form Mobil</h1>
+
+    <form id="carForm">
+      <input type="hidden" id="carId" />
+
+      <label for="merek">Merek Mobil</label>
+      <input type="text" id="merek" placeholder="Contoh: Toyota, Honda, Suzuki" required />
+
+      <label for="model">Model</label>
+      <input type="text" id="model" placeholder="Contoh: Avanza, Jazz, Ertiga" required />
+
+      <label for="tahun">Tahun</label>
+      <input type="number" id="tahun" min="1980" max="2030" placeholder="Tahun produksi" required />
+
+      <label for="warna">Warna</label>
+      <input type="text" id="warna" placeholder="Contoh: Merah, Putih, Hitam" required />
+
+      <label for="harga">Harga (Rp)</label>
+      <input type="number" id="harga" min="0" placeholder="Harga dalam Rupiah" required />
+
+      <button type="submit" id="submitBtn">Simpan</button>
+    </form>
+
+    <h2>Data Mobil</h2>
+    <table id="carTable">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Merek</th>
+          <th>Model</th>
+          <th>Tahun</th>
+          <th>Warna</th>
+          <th>Harga</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="carList"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

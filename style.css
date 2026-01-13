@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff5f7; /* Latar belakang pink pastel sangat lembut */
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.25); /* Bayangan pink transparan */
+  border: 1px solid #ffd1dc; /* Border tipis pink pastel */
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #ff69b4; /* Hot pink lembut untuk judul */
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #ff85a2; /* Pink sedikit lebih muda */
+}
+
+form {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: 600;
+  color: #ff8fb1; /* Pink pastel untuk label */
+}
+
+input,
+select,
+button {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ffd1dc;
+  border-radius: 8px;
+  background-color: #fff9fb;
+  transition: all 0.25s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #ff85a2;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 133, 162, 0.2);
+}
+
+button {
+  background-color: #ffb6c1; /* Pink pastel klasik (Light Pink) */
+  color: #d6336c; /* Teks pink tua agar kontras */
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #ffaec9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.4);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ffe5ec;
+}
+
+th {
+  background-color: #fff0f5; /* Lavender Blush — latar header sangat lembut */
+  color: #ff69b4;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #fff9fc;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.edit-btn {
+  background-color: #ffcce6;
+  color: #d1477a;
+}
+
+.edit-btn:hover {
+  background-color: #ffb3d9;
+}
+
+.delete-btn {
+  background-color: #ffd6e7;
+  color: #c2185b;
+}
+
+.delete-btn:hover {
+  background-color: #ffbed9;
+}
